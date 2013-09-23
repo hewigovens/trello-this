@@ -1,7 +1,7 @@
 {
   "name": "Trello This",
   "description": "A Chrome extension wrapper for Trello-Bookmarklet",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "@hewigovens",
 
   "manifest_version": 2,
