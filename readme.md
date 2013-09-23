@@ -8,6 +8,9 @@ improvement:
 * add right-click menu support
 * native desktop notification support
 
+You can install from it [chrome web store](https://chrome.google.com/webstore/detail/llapjidoaciepmfjchefhhachlmehfdl)
+
+
 ###Credits
 * [Trello-Bookmarklet](https://github.com/danlec/Trello-Bookmarklet)
 * [Boards for Trello](https://github.com/paulferrett/trelloboards)
