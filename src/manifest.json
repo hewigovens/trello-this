@@ -1,7 +1,7 @@
 {
   "name": "Trello This",
   "description": "A Chrome extension wrapper for Trello-Bookmarklet",
-  "version": "0.1",
+  "version": "0.2.1",
   "author": "@hewigovens",
 
   "manifest_version": 2,
@@ -18,10 +18,10 @@
   },
   
   "web_accessible_resources": [
-      "img/icon48.png"
+      "img/trello-48.png"
   ],
 
-  "icons": { "48": "img/icon48.png" },
+  "icons": { "48": "img/trello-48.png", "128":"img/trello.png"},
 
   "content_security_policy": "script-src 'self' https://trello.com; object-src 'self'"
 }

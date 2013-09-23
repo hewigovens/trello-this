@@ -16,7 +16,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 
     console.log(request, sender);
     if (request.action === "showNotification") {
-        var notification = webkitNotifications.createNotification("img/icon48.png","Trello This", request.text);
+        var notification = webkitNotifications.createNotification("img/trello-48.png","Trello This", request.text);
         notification.addEventListener('click', function(){
             notification.cancel();
             chrome.tabs.create({url:request.link});

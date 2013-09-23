@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mkdir -p build
 ZIP_EXCLUDE="*.DS_Store *.swo *.swp src/*~ src/js/*~ src/css/*~"
 
 tool/crxtool.sh src tool/trello-this.pem build/trello-this.crx
