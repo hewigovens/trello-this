@@ -8,7 +8,7 @@ var contexts = ["page","selection","link","editable","image","video",
 
 var storage = localStorage;
 
-chrome.contextMenus.create({"title": "Trello This",
+chrome.contextMenus.create({"title": "Card this to Trello",
                             "contexts": contexts,
                             "onclick": menuClicked});
 
@@ -16,7 +16,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 
     console.log(request, sender);
     if (request.action === "showNotification") {
-        var notification = webkitNotifications.createNotification("img/trello-48.png","Trello This", request.text);
+        var notification = webkitNotifications.createNotification("img/trello-48.png","Card this to Trello", request.text);
         notification.addEventListener('click', function(){
             notification.cancel();
             chrome.tabs.create({url:request.link});

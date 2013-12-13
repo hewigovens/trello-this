@@ -1,7 +1,7 @@
 {
-  "name": "Trello This",
+  "name": "Card this to Trello",
   "description": "A Chrome extension wrapper for Trello-Bookmarklet",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "@hewigovens",
 
   "manifest_version": 2,

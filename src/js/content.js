@@ -213,7 +213,7 @@ console.debug("selection is:", selection);
                 Trello.authorize({
                     type: "popup",
                     expiration: "never",
-                    name: "Trello This",
+                    name: "Card this to Trello",
                     scope: { read: true, write: true },
                     success: listBoard
                   });

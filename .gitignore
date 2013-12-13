@@ -5,3 +5,4 @@
 *.swo
 build/
 tool/trello-this.pem
+*.bak
