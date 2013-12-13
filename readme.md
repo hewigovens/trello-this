@@ -1,5 +1,7 @@
 ###About
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hewigovens/trello-this/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 trello-this is a chrome extension, a wrapper with some enhancements for Trello-Bookmarklet.
 
 improvement:
