@@ -113,7 +113,7 @@ console.debug("selection is:", selection);
         background: "#000",
         opacity: .75,
         "z-index": 1e4,
-        position: "absolute",
+        position: "fixed",
         left: 0,
         top: 0,
         right: 0,
@@ -127,7 +127,7 @@ console.debug("selection is:", selection);
       // Show a "popup"
       var $div = $("<div>")
       .css({
-        position: "absolute",
+        position: "fixed",
         border: "1px solid #000",
         padding: "16px",
         width: 300,
