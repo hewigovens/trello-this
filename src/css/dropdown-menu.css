@@ -1,0 +1,143 @@
+/*** DEFAULT COLORS/STYLES ***/
+/* Root menu */
+.dropdown-menu {
+    background: #fff;
+}
+/* Root links */
+.dropdown-menu a,
+.dropdown-menu a:link,
+.dropdown-menu a:visited {
+    text-decoration: none;
+    color: #393939;
+    padding: 5px 9px;
+}
+/* Root link hover */
+.dropdown-menu a:hover,
+.dropdown-menu li.dropdown-menu-hover > a {
+    color: #000;
+}
+/* Root menu item hover */
+.dropdown-menu li:hover,
+.dropdown-menu li.dropdown-menu-hover {
+    background: #e0e2e2;
+}
+/* Submenus */
+.dropdown-menu ul {
+    border: 1px solid #c4c7c8;
+    background: #fff;
+}
+/* Submenu item hover */
+.dropdown-menu ul li:hover,
+.dropdown-menu ul li.dropdown-menu-hover {
+    background: #c4c7c8;
+}
+
+/* Optional submenu drop shadow */
+.dropdown-menu-shadow {
+    -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*** ESSENTIAL STYLES ***/
+.dropdown-menu {
+    white-space: nowrap;
+    display: inline-block;
+    /* IE7 inline-block fix */
+    *display: inline;
+    *zoom: 1;
+}
+.dropdown-menu,
+.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dropdown-menu ul {
+    display: none;
+    position: absolute;
+    z-index: 1000000;
+}
+.dropdown-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /* IE7 inline-block and padding fix */
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: bottom;
+}
+.dropdown-menu li a {
+    display: block;
+}
+.dropdown-menu ul li {
+    position: relative;
+    display: block;
+}
+
+/* Optional submenu arrows */
+span.dropdown-menu-sub-indicator {
+    margin-left: .4em;
+    display: inline-block;
+    vertical-align: baseline;
+    /* Image Replacement */
+    background-color: transparent;
+    background-image: url('arrows-000000.png');
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    overflow: hidden;
+    /* IE7 image replacement fix */
+    *text-indent: -9999px;
+    /* IE7 inline-block fix */
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: middle;
+}
+span.dropdown-menu-sub-indicator:before {
+    /* Image replacement */
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+/* Arrow hovers */
+.dropdown-menu li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px -100px;
+}
+/* Point arrows to the right for anchors in subs */
+.dropdown-menu ul span.dropdown-menu-sub-indicator {
+    background-position: 0 0;
+}
+.dropdown-menu ul li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu ul li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px 0;
+}
+
+/* Vertical-style menu with default width */
+.dropdown-menu-vertical {
+    width: 300px;
+}
+.dropdown-menu-vertical li {
+    display: block;
+    position: relative;
+    /* IE7 fix */
+    *float: left;
+    *width: 100%;
+}
+.dropdown-menu-vertical span.dropdown-menu-sub-indicator {
+    background-position: 0 0;
+}
+.dropdown-menu-vertical li:hover > a > span.dropdown-menu-sub-indicator,
+.dropdown-menu-vertical li.dropdown-menu-hover > a > span.dropdown-menu-sub-indicator {
+    background-position: -10px 0;
+}

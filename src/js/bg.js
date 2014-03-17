@@ -1,6 +1,8 @@
 var menuClicked = function(info, tab){
-    console.log("trello this!");
-    chrome.tabs.executeScript({file: "js/content.js"});
+    console.log("trello this: " + info.pageUrl);
+    chrome.tabs.insertCSS({file: "css/dropdown-menu.css"}, function(){
+        chrome.tabs.executeScript({file: "js/content.js"});
+    });
 };
 
 var contexts = ["page","selection","link","editable","image","video",
