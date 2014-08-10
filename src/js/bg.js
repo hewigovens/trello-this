@@ -18,15 +18,17 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
 
     console.log(request, sender);
     if (request.action === "showNotification") {
-        var notification = webkitNotifications.createNotification("img/trello-48.png","Card this to Trello", request.text);
-        notification.addEventListener('click', function(){
-            notification.cancel();
-            chrome.tabs.create({url:request.link});
+        chrome.notifications.create(request.link, {
+            'type' : 'basic',
+            'title': 'Trello card created',
+            'message': request.text,
+            'iconUrl': 'img/trello-48.png'}, function(){
+                console.log('notification sent: ' + message);
+            });
+        chrome.notifications.onClicked.addListener(function(notification_id){
+            chrome.tabs.create({url:notification_id});
         });
-        notification.show();
-        setTimeout(function(){
-            notification.cancel();
-        },2000);
+
     } else if (request.action === "getTrelloToken") {
         if (storage.trello_token) {
             sendResponse(storage.trello_token);

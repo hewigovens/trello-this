@@ -99,7 +99,7 @@ console.debug("selection is:", selection);
       }, function(card){
         // Display a desktop notification with a link to the card
         // that was just created
-        chrome.extension.sendRequest({action: "showNotification", text: "Created a Trello Card", link:card.url});
+        chrome.extension.sendRequest({action: "showNotification", text: card.url, link:card.url});
       });
     }
   }
